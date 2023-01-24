@@ -1,13 +1,13 @@
-## [Zod Form Example](https://zod-example.vercel.app/){:target="_blank"}
+## [Zod Form Example](https://zod-example.vercel.app/)
 
 ### Tech Stack
 
 - React.js
-- [Zod](https://www.npmjs.com/package/zod){:target="_blank"}
+- [Zod](https://www.npmjs.com/package/zod)
 - Next.js
 - Tailwind css
 
 ### Vist site
 
-[Zod Form Example](https://zod-example.vercel.app/){:target="_blank"}
+[Zod Form Example](https://zod-example.vercel.app/)
 
