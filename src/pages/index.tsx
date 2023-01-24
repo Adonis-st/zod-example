@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { z } from "zod";
 
@@ -35,14 +35,14 @@ export default function Home() {
 		message: z.string().min(3, "Message min length is 3"),
 	});
 
-	const handleChange = (e: any) => {
+	const handleChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => {
 		setContactForm((prevState) => ({
 			...prevState,
 			[e.target.name]: e.target.value,
 		}));
 	};
 
-	const handleSubmit = (e: any) => {
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		// Form Validtion
